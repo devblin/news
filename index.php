@@ -1,3 +1,6 @@
+<?php
+require __DIR__ . "/autoload.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +18,7 @@
 
 <body>
     <div class="container-fluid p-0 m-0" style="overflow-x: hidden;">
+        <input id="baseurl" type="hidden" value=<?php echo env("BASE_URL") . env("FOLDER"); ?>>
 
         <nav id="navmy" class="navbar navbar-expand bg-dark ">
             <a id="newscountry" class="navbar-brand" href="#">News</a>
@@ -52,12 +56,11 @@
 </html>
 <script>
 $("#upbtn").hide();
-
-const baseUrl = "http://localhost";
-const url = baseUrl + "/News/source.php";
+const baseUrl = $("#baseurl").val();
+const url = baseUrl + "/source.php";
 const searchBtn = $("#searchbtn");
 const newsResults = $("#newsresults");
-const defaultImage = baseUrl + "/News/default.jpg";
+const defaultImage = baseUrl + "/default.jpg";
 const spinner = "<div class='spinner-grow text-primary'></div>"
 
 //NEWS CLASSS
