@@ -1,6 +1,4 @@
-<?php
-require __DIR__ . "/autoload.php";
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
