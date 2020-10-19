@@ -18,7 +18,7 @@ require __DIR__ . "/autoload.php";
 
 <body>
     <div class="container-fluid p-0 m-0" style="overflow-x: hidden;">
-        <input id="baseurl" type="hidden" value=<?php echo env("BASE_URL") . env("FOLDER"); ?>>
+        <input id="baseurl" type="hidden" value=<?php echo getenv("BASE_URL") . getenv("FOLDER"); ?>>
 
         <nav id="navmy" class="navbar navbar-expand bg-dark ">
             <a id="newscountry" class="navbar-brand" href="#">News</a>
