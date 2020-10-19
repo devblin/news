@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . "/autoload.php";
 $curl = curl_init();
-$api_key = env("API_KEY");
+$api_key = getenv("API_KEY");
 date_default_timezone_set('Asia/Kolkata');
 $date = date('Y-m-d');
 if (isset($_POST['searchquery'])) {
