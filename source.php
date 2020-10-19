@@ -1,5 +1,4 @@
 <?php
-require __DIR__ . "/autoload.php";
 $curl = curl_init();
 $api_key = getenv("API_KEY");
 date_default_timezone_set('Asia/Kolkata');
