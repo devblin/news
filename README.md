@@ -1,4 +1,5 @@
 # News
+A basic news app
 ### Used:
 - PHP
 - JavaScript
