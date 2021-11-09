@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,7 @@
     <div class="container-fluid p-0 m-0" style="overflow-x: hidden;">
         <input id="baseurl" type="hidden" value=<?php echo getenv("BASE_URL") . getenv("FOLDER"); ?>>
 
-        <nav id="navmy" class="navbar navbar-expand bg-dark ">
+        <nav id="navmy" class="navbar navbar-expand bg-light ">
             <a id="newscountry" class="navbar-brand" href="#">News</a>
             <input id="searchbar" class="form-control" type="text" placeholder="Search for any topic">
             <button id="searchbtn" class="ml-1 p-auto btn btn-primary"><i class="f20 fas fa-search"></i></button>
