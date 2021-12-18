@@ -1,7 +1,6 @@
 <?php
-require __DIR__ . "/autoload.php";
 $curl = curl_init();
-$api_key = env("API_KEY");
+$api_key = getenv("API_KEY");
 date_default_timezone_set('Asia/Kolkata');
 $date = date('Y-m-d');
 if (isset($_POST['searchquery'])) {
@@ -21,7 +20,7 @@ curl_setopt_array($curl, array(
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "GET",
-    CURLOPT_HTTPHEADER => array('Content-Type: application/json')
+    CURLOPT_HTTPHEADER => array('Content-Type: application/json'),
 ));
 $response = curl_exec($curl);
 curl_close($curl);
